@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>631395BE-7FF4-4D86-B48C-57B477A4F1BA</string>
+	<string>E112837E-ADED-4329-8593-B62041DD11EB</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CSE335_Proj04v2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>0DFAC9C4-97BA-4701-A908-6A2348B1838A</key>
+		<key>A3C6299C-FA72-4927-BB16-A64A56ED4FFF</key>
 		<string>https://github.com/njd911/CSE335_Proj04.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CSE335_Proj04v2/CSE335_Proj04v2.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>0DFAC9C4-97BA-4701-A908-6A2348B1838A</key>
+		<key>A3C6299C-FA72-4927-BB16-A64A56ED4FFF</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0DFAC9C4-97BA-4701-A908-6A2348B1838A</string>
+	<string>A3C6299C-FA72-4927-BB16-A64A56ED4FFF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0DFAC9C4-97BA-4701-A908-6A2348B1838A</string>
+			<string>A3C6299C-FA72-4927-BB16-A64A56ED4FFF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CSE335_Proj04</string>
 		</dict>

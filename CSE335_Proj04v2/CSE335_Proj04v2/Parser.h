@@ -10,5 +10,21 @@
 #define __CSE335_Proj04__Parser__
 
 #include <iostream>
+#include <stack>
+class LogicExpr;
+
+class Parser
+{
+private:
+    std::stack<std::string> m_operands;
+    std::stack<LogicExpr*> m_logicExpressions;
+    std::string m_input;
+    
+public:
+    Parser(std::string s): m_input(s){};
+    virtual void parse();
+    LogicExpr* getParsed();
+    
+};
 
 #endif /* defined(__CSE335_Proj04__Parser__) */

@@ -6,4 +6,19 @@
 //  Copyright (c) 2014 Nick Durak. All rights reserved.
 //
 
+#include <string>
+#include <stack>
+#include "LogicExpr.h"
 #include "Parser.h"
+
+using namespace std;
+
+LogicExpr* Parser::getParsed()
+{
+    if(m_logicExpressions.empty())
+    {
+        LogicExpr* top = m_logicExpressions.back();
+        m_logicExpressions.pop();
+        return top;
+    }
+}
