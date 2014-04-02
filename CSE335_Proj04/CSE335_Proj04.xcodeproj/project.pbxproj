@@ -20,6 +20,9 @@
 		20A620CC18EC7692007370AD /* PrintVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20A620BE18EC7692007370AD /* PrintVisitor.cpp */; };
 		20A620CD18EC7692007370AD /* SimplifyVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20A620C018EC7692007370AD /* SimplifyVisitor.cpp */; };
 		20A620CE18EC7692007370AD /* Variable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20A620C218EC7692007370AD /* Variable.cpp */; };
+		50C528F418EC7BEB00E95C9C /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C528F218EC7BEB00E95C9C /* Parser.cpp */; };
+		50C528F718EC7C3500E95C9C /* AbstractBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C528F518EC7C3500E95C9C /* AbstractBuilder.cpp */; };
+		50C528FA18EC7D1900E95C9C /* ConcreteBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C528F818EC7D1900E95C9C /* ConcreteBuilder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,7 +66,16 @@
 		20A620C118EC7692007370AD /* SimplifyVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplifyVisitor.h; sourceTree = "<group>"; };
 		20A620C218EC7692007370AD /* Variable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Variable.cpp; sourceTree = "<group>"; };
 		20A620C318EC7692007370AD /* Variable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variable.h; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		20A620CF18EC7C37007370AD /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+=======
+		50C528F218EC7BEB00E95C9C /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
+		50C528F318EC7BEB00E95C9C /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		50C528F518EC7C3500E95C9C /* AbstractBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractBuilder.cpp; sourceTree = "<group>"; };
+		50C528F618EC7C3500E95C9C /* AbstractBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractBuilder.h; sourceTree = "<group>"; };
+		50C528F818EC7D1900E95C9C /* ConcreteBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConcreteBuilder.cpp; sourceTree = "<group>"; };
+		50C528F918EC7D1900E95C9C /* ConcreteBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteBuilder.h; sourceTree = "<group>"; };
+>>>>>>> origin/Barend_Branch
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +134,16 @@
 				20A620C318EC7692007370AD /* Variable.h */,
 				20A620A318EC7634007370AD /* main.cpp */,
 				20A620A518EC7634007370AD /* CSE335_Proj04.1 */,
+<<<<<<< HEAD
 				20A620CF18EC7C37007370AD /* Node.h */,
+=======
+				50C528F218EC7BEB00E95C9C /* Parser.cpp */,
+				50C528F318EC7BEB00E95C9C /* Parser.h */,
+				50C528F518EC7C3500E95C9C /* AbstractBuilder.cpp */,
+				50C528F618EC7C3500E95C9C /* AbstractBuilder.h */,
+				50C528F818EC7D1900E95C9C /* ConcreteBuilder.cpp */,
+				50C528F918EC7D1900E95C9C /* ConcreteBuilder.h */,
+>>>>>>> origin/Barend_Branch
 			);
 			path = CSE335_Proj04;
 			sourceTree = "<group>";
@@ -179,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20A620CC18EC7692007370AD /* PrintVisitor.cpp in Sources */,
+				50C528FA18EC7D1900E95C9C /* ConcreteBuilder.cpp in Sources */,
 				20A620A418EC7634007370AD /* main.cpp in Sources */,
 				20A620C818EC7692007370AD /* Implication.cpp in Sources */,
 				20A620CE18EC7692007370AD /* Variable.cpp in Sources */,
@@ -187,9 +209,11 @@
 				20A620C918EC7692007370AD /* Literal.cpp in Sources */,
 				20A620CB18EC7692007370AD /* Or.cpp in Sources */,
 				20A620C618EC7692007370AD /* Equivalence.cpp in Sources */,
+				50C528F718EC7C3500E95C9C /* AbstractBuilder.cpp in Sources */,
 				20A620CD18EC7692007370AD /* SimplifyVisitor.cpp in Sources */,
 				20A620C518EC7692007370AD /* BoolExpr.cpp in Sources */,
 				20A620CA18EC7692007370AD /* Negate.cpp in Sources */,
+				50C528F418EC7BEB00E95C9C /* Parser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +323,7 @@
 				20A620AB18EC7634007370AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
