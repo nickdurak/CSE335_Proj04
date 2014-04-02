@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CSE335_Proj04.xcscheme</key>
+		<key>CSE335_Proj04v2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>20A6209F18EC7634007370AD</key>
+		<key>208613BC18EC80FD00D616F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
