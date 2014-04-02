@@ -63,6 +63,7 @@
 		20A620C118EC7692007370AD /* SimplifyVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplifyVisitor.h; sourceTree = "<group>"; };
 		20A620C218EC7692007370AD /* Variable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Variable.cpp; sourceTree = "<group>"; };
 		20A620C318EC7692007370AD /* Variable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variable.h; sourceTree = "<group>"; };
+		20A620CF18EC7C37007370AD /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 				20A620C318EC7692007370AD /* Variable.h */,
 				20A620A318EC7634007370AD /* main.cpp */,
 				20A620A518EC7634007370AD /* CSE335_Proj04.1 */,
+				20A620CF18EC7C37007370AD /* Node.h */,
 			);
 			path = CSE335_Proj04;
 			sourceTree = "<group>";
