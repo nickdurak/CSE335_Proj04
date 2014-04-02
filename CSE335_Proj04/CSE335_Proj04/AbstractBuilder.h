@@ -15,8 +15,8 @@ class AbstractBuilder
 {
 public:
     virtual void addParent(Node* 1, Node* r) = 0;
-    virtual void addLiteralObj(string s ) = 0;
-    virtual void addOperand9string s) = 0;
+    virtual void addVariableObj(string s ) = 0;
+    virtual void addOperandstring s) = 0;
 };
 
 #endif /* defined(__CSE335_Proj04__AbstractBuilder__) */

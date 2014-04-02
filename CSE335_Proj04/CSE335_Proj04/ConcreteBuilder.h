@@ -22,7 +22,7 @@ public:
     ConcreteBuilder(){};
     virtual void addParent();
     virtual void addOperand(string s);
-    virtual void addLiteralObj(string s);
+    virtual void addVariableObj(string s);
 };
 
 #endif /* defined(__CSE335_Proj04__ConcreteBuilder__) */
