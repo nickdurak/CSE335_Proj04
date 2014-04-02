@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "20A6209F18EC7634007370AD"
-               BuildableName = "CSE335_Proj04"
-               BlueprintName = "CSE335_Proj04"
-               ReferencedContainer = "container:CSE335_Proj04.xcodeproj">
+               BlueprintIdentifier = "208613BC18EC80FD00D616F9"
+               BuildableName = "CSE335_Proj04v2"
+               BlueprintName = "CSE335_Proj04v2"
+               ReferencedContainer = "container:CSE335_Proj04v2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20A6209F18EC7634007370AD"
-            BuildableName = "CSE335_Proj04"
-            BlueprintName = "CSE335_Proj04"
-            ReferencedContainer = "container:CSE335_Proj04.xcodeproj">
+            BlueprintIdentifier = "208613BC18EC80FD00D616F9"
+            BuildableName = "CSE335_Proj04v2"
+            BlueprintName = "CSE335_Proj04v2"
+            ReferencedContainer = "container:CSE335_Proj04v2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20A6209F18EC7634007370AD"
-            BuildableName = "CSE335_Proj04"
-            BlueprintName = "CSE335_Proj04"
-            ReferencedContainer = "container:CSE335_Proj04.xcodeproj">
+            BlueprintIdentifier = "208613BC18EC80FD00D616F9"
+            BuildableName = "CSE335_Proj04v2"
+            BlueprintName = "CSE335_Proj04v2"
+            ReferencedContainer = "container:CSE335_Proj04v2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "20A6209F18EC7634007370AD"
-            BuildableName = "CSE335_Proj04"
-            BlueprintName = "CSE335_Proj04"
-            ReferencedContainer = "container:CSE335_Proj04.xcodeproj">
+            BlueprintIdentifier = "208613BC18EC80FD00D616F9"
+            BuildableName = "CSE335_Proj04v2"
+            BlueprintName = "CSE335_Proj04v2"
+            ReferencedContainer = "container:CSE335_Proj04v2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
