@@ -11,18 +11,18 @@
 
 #include <stack>
 #include "AbstractBuilder.h"
-#include "LiteralObj.h"
+#include "BoolObj.h"
 #include "Operand.h"
 
 class ConcreteBuilder: public AbstractBuilder
 {
 private:
-    stack <Node*> m_exprtree;
+    std::stack <Node*> m_exprtree;
 public:
     ConcreteBuilder(){};
     virtual void addParent();
-    virtual void addOperand(string s);
-    virtual void addVariableObj(string s);
+    virtual void addOperand(std::string s);
+    virtual void addBoolObj(std::string s);
 };
 
 #endif /* defined(__CSE335_Proj04__ConcreteBuilder__) */

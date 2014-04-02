@@ -23,6 +23,8 @@
 		208613F318EC817E00D616F9 /* PrintVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 208613E218EC817E00D616F9 /* PrintVisitor.cpp */; };
 		208613F418EC817E00D616F9 /* SimplifyVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 208613E418EC817E00D616F9 /* SimplifyVisitor.cpp */; };
 		208613F518EC817E00D616F9 /* Variable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 208613E618EC817E00D616F9 /* Variable.cpp */; };
+		208613FB18EC82F400D616F9 /* BoolObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 208613F918EC82F400D616F9 /* BoolObj.cpp */; };
+		208613FE18EC830300D616F9 /* Operand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 208613FC18EC830300D616F9 /* Operand.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +75,10 @@
 		208613E518EC817E00D616F9 /* SimplifyVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplifyVisitor.h; sourceTree = "<group>"; };
 		208613E618EC817E00D616F9 /* Variable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Variable.cpp; sourceTree = "<group>"; };
 		208613E718EC817E00D616F9 /* Variable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variable.h; sourceTree = "<group>"; };
+		208613F918EC82F400D616F9 /* BoolObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoolObj.cpp; sourceTree = "<group>"; };
+		208613FA18EC82F400D616F9 /* BoolObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoolObj.h; sourceTree = "<group>"; };
+		208613FC18EC830300D616F9 /* Operand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Operand.cpp; sourceTree = "<group>"; };
+		208613FD18EC830300D616F9 /* Operand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operand.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,10 @@
 				208613E718EC817E00D616F9 /* Variable.h */,
 				208613C018EC80FD00D616F9 /* main.cpp */,
 				208613C218EC80FD00D616F9 /* CSE335_Proj04v2.1 */,
+				208613F918EC82F400D616F9 /* BoolObj.cpp */,
+				208613FA18EC82F400D616F9 /* BoolObj.h */,
+				208613FC18EC830300D616F9 /* Operand.cpp */,
+				208613FD18EC830300D616F9 /* Operand.h */,
 			);
 			path = CSE335_Proj04v2;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 				208613EA18EC817E00D616F9 /* BoolExpr.cpp in Sources */,
 				208613EE18EC817E00D616F9 /* Implication.cpp in Sources */,
 				208613F318EC817E00D616F9 /* PrintVisitor.cpp in Sources */,
+				208613FB18EC82F400D616F9 /* BoolObj.cpp in Sources */,
 				208613EB18EC817E00D616F9 /* ConcreteBuilder.cpp in Sources */,
 				208613EC18EC817E00D616F9 /* Equivalence.cpp in Sources */,
 				208613F218EC817E00D616F9 /* Parser.cpp in Sources */,
@@ -206,6 +217,7 @@
 				208613EF18EC817E00D616F9 /* Literal.cpp in Sources */,
 				208613ED18EC817E00D616F9 /* EvaluateVisitor.cpp in Sources */,
 				208613F418EC817E00D616F9 /* SimplifyVisitor.cpp in Sources */,
+				208613FE18EC830300D616F9 /* Operand.cpp in Sources */,
 				208613F018EC817E00D616F9 /* Negate.cpp in Sources */,
 				208613F118EC817E00D616F9 /* Or.cpp in Sources */,
 			);
