@@ -11,4 +11,12 @@
 
 #include <iostream>
 
+#include "Node.h"
+
+class BoolObj : public Node
+{
+public:
+    BoolObj(std::string value) : Node(value){};
+};
+
 #endif /* defined(__CSE335_Proj04v2__BoolObj__) */

@@ -11,4 +11,12 @@
 
 #include <iostream>
 
+#include "Node.h"
+
+class Operand : public Node
+{
+public:
+    Operand(std::string value) : Node(value){};
+};
+
 #endif /* defined(__CSE335_Proj04v2__Operand__) */

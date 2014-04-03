@@ -9,6 +9,8 @@
 #ifndef CSE335_Proj04_Node_h
 #define CSE335_Proj04_Node_h
 
+#include <string>
+
 class Node{
 private:
     std::string m_value;
@@ -17,7 +19,7 @@ private:
     bool m_isParent;
     
 public:
-    Node(std::string value) : m_value(value), _isParent(false){};
+    Node(std::string value) : m_value(value), m_isParent(false){};
     virtual std::string getValue() {return m_value;};
     virtual void setParent() {m_isParent = true;};
     virtual bool getIsParent() {return m_isParent;};
