@@ -10,6 +10,7 @@
 #define __CSE335_Proj04__AbstractBuilder__
 
 #include "Node.h"
+#include <string>
 
 class AbstractBuilder
 {

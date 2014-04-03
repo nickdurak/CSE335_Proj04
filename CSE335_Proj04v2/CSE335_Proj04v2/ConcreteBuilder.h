@@ -10,6 +10,7 @@
 #define __CSE335_Proj04__ConcreteBuilder__
 
 #include <stack>
+#include <string>
 #include "AbstractBuilder.h"
 #include "BoolObj.h"
 #include "Operand.h"
@@ -19,6 +20,7 @@ class ConcreteBuilder: public AbstractBuilder
 private:
     std::stack <Node*> m_exprtree;
 public:
+    std::stack<Node*> get_exprtree();
     ConcreteBuilder(){};
     virtual void addParent();
     virtual void addOperand(std::string s);
