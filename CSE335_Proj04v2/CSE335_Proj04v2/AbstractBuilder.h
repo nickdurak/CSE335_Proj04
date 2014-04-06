@@ -12,12 +12,18 @@
 #include "Node.h"
 #include <string>
 
+class LogicExpr;
+
 class AbstractBuilder
 {
 public:
-    virtual void addParent(Node* l, Node* r) = 0;
-    virtual void addBoolObj(std::string s ) = 0;
-    virtual void addOperand(std::string s) = 0;
+    //virtual void addBoolExpr(LogicExpr* l, LogicExpr* r) = 0;
+    //virtual void addNegate(LogicExpr* expr) = 0;
+    virtual void addTrue() = 0;
+    virtual void addFalse() = 0;
+    //virtual void addLiteral(std::string s) = 0;
+    virtual void addVariable(char c) = 0;
+    virtual void addBoolExpr(char c) = 0;
 };
 
 #endif /* defined(__CSE335_Proj04__AbstractBuilder__) */

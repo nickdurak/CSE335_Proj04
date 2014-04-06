@@ -12,19 +12,24 @@
 #include <stack>
 #include <string>
 #include "AbstractBuilder.h"
-#include "BoolObj.h"
-#include "Operand.h"
+#include "LogicExpr.h"
+//#include "BoolObj.h"
+//#include "Operand.h"
 
 class ConcreteBuilder: public AbstractBuilder
 {
 private:
-    std::stack <Node*> m_exprtree;
+    std::stack<char> m_operands;
+    std::stack<LogicExpr*> m_logicExpressions;
 public:
-    std::stack<Node*> get_exprtree();
     ConcreteBuilder(){};
-    virtual void addParent();
-    virtual void addOperand(std::string s);
-    virtual void addBoolObj(std::string s);
+    virtual void addTrue();
+    virtual void addFalse();
+    virtual void addVariable(char c);
+    virtual void addBoolExpr(char c);
+    void completeBuild();
+    bool validExpr();
+    LogicExpr* getLogicExpr();
 };
 
 #endif /* defined(__CSE335_Proj04__ConcreteBuilder__) */

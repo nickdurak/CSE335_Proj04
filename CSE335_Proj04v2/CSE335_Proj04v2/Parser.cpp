@@ -9,16 +9,61 @@
 #include <string>
 #include <stack>
 #include "LogicExpr.h"
+#include "ConcreteBuilder.h"
 #include "Parser.h"
 
 using namespace std;
 
+
+bool Parser::parse(string input)
+{
+    for (int i = 0; i < input.size(); ++i)
+    {
+        if (input[i] == '~' || input[i] == '=' || input[i] == '&' || input[i] == '|' || input[i] == '>')
+        {
+            b.addBoolExpr(input[i]);
+        }
+        
+        else
+        {
+            int j = i;
+            if (input[i] == 't')
+            {
+                if (i < input.size() - 1)
+                {
+                    if (input[i + 1] == 'r')
+                    {
+                        b.addTrue();
+                        i += 3;
+                    }
+                }
+            }
+            else if (input[i] == 'f')
+            {
+                if (i < input.size() - 1)
+                {
+                    if (input[i + 1] == 'a')
+                    {
+                        b.addFalse();
+                        i += 4;
+                    }
+                }
+            }
+            if (j == i && input[i] != ' ')
+            {
+                b.addVariable(input[i]);
+            }
+        }
+    }
+    b.completeBuild();
+    if (b.validExpr())
+    {
+        return true;
+    }
+    return false;
+}
+
 LogicExpr* Parser::getParsed()
 {
-    if(m_logicExpressions.empty())
-    {
-        LogicExpr* top = m_logicExpressions.back();
-        m_logicExpressions.pop();
-        return top;
-    }
+    return b.getLogicExpr();
 }

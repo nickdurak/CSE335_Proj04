@@ -11,20 +11,20 @@
 
 #include <iostream>
 #include <stack>
+
+#include "ConcreteBuilder.h"
+
 class LogicExpr;
 
 class Parser
 {
 private:
-    std::stack<std::string> m_operands;
-    std::stack<LogicExpr*> m_logicExpressions;
-    std::string m_input;
+    ConcreteBuilder b;
     
 public:
-    Parser(std::string s): m_input(s){};
-    virtual void parse();
+    Parser() {};
+    bool parse(std::string input);
     LogicExpr* getParsed();
-    
 };
 
 #endif /* defined(__CSE335_Proj04__Parser__) */
