@@ -28,12 +28,12 @@ using namespace std;
 
 void PrintVisitor::visitLiteral(Literal* lit)
 {
-    cout << lit->getValue() << " ";
+    cout << lit->getValue();
 }
 
 void PrintVisitor::visitVariable(Variable* var)
 {
-    cout << var->getName() << " ";
+    cout << var->getName();
 }
 
 void PrintVisitor::visitNegate(Negate* neg)

@@ -56,6 +56,7 @@ void EvaluateVisitor::visitVariable(Variable* var)
     bool assign;
     cout << "Please assign a value (0 or 1) to " << var->getName() << ":\n";
     cin >> assign;
+    cin.ignore();
     var->assign(assign);
     m_myStack.push(var->getValue());
 }

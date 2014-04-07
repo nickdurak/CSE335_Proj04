@@ -33,15 +33,15 @@ int main(int argc, const char * argv[])
     EvaluateVisitor ev;
     PrintVisitor pv;
     SimplifyVisitor sv;
-    Parser p;
     
     cout.setf(ios::boolalpha);
     
     while (input != "END" && input != "end")
     {
+        Parser p;
         cout << "Enter a logical expresion without parenthisis:\n";
         getline(cin, input);
-        cout << "\nOriginal input string: " << input;
+        cout << "Original input string: " << input;
         if (p.parse(input))
         {
             LogicExpr* tmp = p.getParsed();
@@ -52,7 +52,7 @@ int main(int argc, const char * argv[])
             cout << sv.getValue();
             cout << "\nPrint (evaluated form): ";
             tmp->accept(&ev);
-            cout << "\nthe equation evaluates to " << ev.getValue() << ".\n";
+            cout << "the equation evaluates to " << ev.getValue() << ".\n\n";
             delete tmp;
         }
         else

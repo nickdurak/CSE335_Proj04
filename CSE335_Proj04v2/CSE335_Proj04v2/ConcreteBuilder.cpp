@@ -22,74 +22,6 @@ using namespace std;
 
 void ConcreteBuilder::addBoolExpr(char c)
 {
-  /*  if (m_operands.empty())
-    {
-        m_operands.push(s);
-    }*/
-    /*else if(s == '~')
-    {
-        m_operands.push(s);
-    }
-    else if(s == '=')
-    {
-        if(m_operands.top() == '~')
-        {
-            m_operands.pop();
-            LogicExpr* expr = m_logicExpressions.top();
-            m_logicExpressions.pop();
-            m_logicExpressions.push(new Negate(expr));
-        }
-        m_operands.push(s);
-    }
-    else if(s == '>')
-    {
-        if(m_operands.top() == '~')
-        {
-            m_operands.pop();
-            LogicExpr* expr = m_logicExpressions.top();
-            m_logicExpressions.pop();
-            m_logicExpressions.push(new Negate(expr));
-        }
-        else if(m_operands.top() == '=')
-        {
-            m_operands.pop();
-            LogicExpr* right = m_logicExpressions.top();
-            m_logicExpressions.pop();
-            LogicExpr* left = m_logicExpressions.top();
-            m_logicExpressions.pop();
-            m_logicExpressions.push(new Equivalence(left, right));
-        }
-        m_operands.push(s);
-    }
-    else if(s == '&')
-    {
-        if(m_operands.top() == '~')
-        {
-            m_operands.pop();
-            LogicExpr* expr = m_logicExpressions.top();
-            m_logicExpressions.pop();
-            m_logicExpressions.push(new Negate(expr));
-        }
-        else if(m_operands.top() == '=')
-        {
-            m_operands.pop();
-            LogicExpr* right = m_logicExpressions.top();
-            m_logicExpressions.pop();
-            LogicExpr* left = m_logicExpressions.top();
-            m_logicExpressions.pop();
-            m_logicExpressions.push(new Equivalence(left, right));
-        }
-        else if(m_operands.top() == '>')
-        {
-            m_operands.pop();
-            LogicExpr* right = m_logicExpressions.top();
-            m_logicExpressions.pop();
-            LogicExpr* left = m_logicExpressions.top();
-            m_logicExpressions.pop();
-            m_logicExpressions.push(new Implication(left, right));
-        }
-        m_operands.push(s);
-    }*/
     if(!m_operands.empty())
     {
         if(m_operands.top() == '~')
@@ -227,6 +159,20 @@ LogicExpr* ConcreteBuilder::getLogicExpr()
         return top;
     }
     else return nullptr;
+}
+
+ConcreteBuilder::~ConcreteBuilder()
+{
+    while (!m_logicExpressions.empty())
+    {
+        LogicExpr* top = m_logicExpressions.top();
+        m_logicExpressions.pop();
+        delete top;
+    }
+    while (!m_operands.empty())
+    {
+        m_operands.pop();
+    }
 }
 
 
