@@ -38,34 +38,39 @@ int main(int argc, const char * argv[])
     
     while (input != "END" && input != "end")
     {
-        Parser p;
         cout << "Enter a logical expresion without parenthisis:\n";
         getline(cin, input);
-        cout << "Original input string: " << input;
-        if (p.parse(input))
+        if (input != "END" && input != "end")
         {
-            LogicExpr* tmp = p.getParsed();
-            cout << "\nPrint (original form): ";
-            tmp->accept(&pv);
-            cout << "\nPrint (simplified form): ";
-            tmp->accept(&sv);
-            string simplified = sv.getValue();
-            if (simplified == "1")
+            Parser p;
+            AbstractBuilder* builder = new ConcreteBuilder();
+            p.setBuilder(builder);
+            cout << "Original input string: " << input;
+            if (p.parse(input))
             {
-                cout << true;
-            }
-            else if (simplified == "0")
-            {
-                cout << false;
+                LogicExpr* tmp = p.getParsed();
+                cout << "\nPrint (original form): ";
+                tmp->accept(&pv);
+                cout << "\nPrint (simplified form): ";
+                tmp->accept(&sv);
+                string simplified = sv.getValue();
+                if (simplified == "1")
+                {
+                    cout << true;
+                }
+                else if (simplified == "0")
+                {
+                    cout << false;
+                }
+                else
+                    cout << simplified;
+                cout << "\nPrint (evaluated form):\n";
+                tmp->accept(&ev);
+                cout << "the equation evaluates to " << ev.getValue() << ".\n\n";
+                delete tmp;
             }
             else
-                cout << simplified;
-            cout << "\nPrint (evaluated form):\n";
-            tmp->accept(&ev);
-            cout << "the equation evaluates to " << ev.getValue() << ".\n\n";
-            delete tmp;
+                cout << "\nThe input string does not contain a valid boolean expression\n\n";
         }
-        else
-            cout << "\nThe input string does not contain a valid boolean expression\n\n";
     }
 }

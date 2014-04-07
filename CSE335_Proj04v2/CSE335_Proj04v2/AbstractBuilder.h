@@ -22,6 +22,7 @@ public:
     virtual void addVariable(char c) = 0;
     virtual void addBoolExpr(char c) = 0;
     virtual void completeBuild() = 0;
+    virtual bool validExpr() = 0;
     virtual LogicExpr* getLogicExpr() = 0;
     virtual ~AbstractBuilder() {};
 protected:

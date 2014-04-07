@@ -22,7 +22,7 @@ public:
     virtual void addVariable(char c);
     virtual void addBoolExpr(char c);
     virtual void completeBuild();
-    bool validExpr();
+    virtual bool validExpr();
     virtual LogicExpr* getLogicExpr();
     virtual ~ConcreteBuilder();
 };

@@ -19,12 +19,14 @@ class LogicExpr;
 class Parser
 {
 private:
-    ConcreteBuilder b;
+    AbstractBuilder* b;
     
 public:
     Parser() {};
+    void setBuilder(AbstractBuilder* builder);
     bool parse(std::string input);
     LogicExpr* getParsed();
+    virtual ~Parser() {};
 };
 
 #endif /* defined(__CSE335_Proj04__Parser__) */
