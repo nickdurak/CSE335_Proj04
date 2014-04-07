@@ -54,7 +54,7 @@ void EvaluateVisitor::visitVariable(Variable* var)
         return;
     }
     bool assign;
-    cout << "Please assign a value (0 or 1) to " << var->getName() << ":\n";
+    cout << "\tPlease assign a value (0 or 1) to " << var->getName() << ": ";
     cin >> assign;
     cin.ignore();
     var->assign(assign);

@@ -49,8 +49,18 @@ int main(int argc, const char * argv[])
             tmp->accept(&pv);
             cout << "\nPrint (simplified form): ";
             tmp->accept(&sv);
-            cout << sv.getValue();
-            cout << "\nPrint (evaluated form): ";
+            string simplified = sv.getValue();
+            if (simplified == "1")
+            {
+                cout << true;
+            }
+            else if (simplified == "0")
+            {
+                cout << false;
+            }
+            else
+                cout << simplified;
+            cout << "\nPrint (evaluated form):\n";
             tmp->accept(&ev);
             cout << "the equation evaluates to " << ev.getValue() << ".\n\n";
             delete tmp;
