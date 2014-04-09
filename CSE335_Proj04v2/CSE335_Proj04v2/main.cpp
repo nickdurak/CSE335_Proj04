@@ -38,7 +38,7 @@ int main(int argc, const char * argv[])
     
     while (input != "END" && input != "end")
     {
-        cout << "Enter a logical expresion without parenthisis:\n";
+        cout << "Enter a logical expresion without parenthisis (type \"END\" to end):\n";
         getline(cin, input);
         if (input != "END" && input != "end")
         {
